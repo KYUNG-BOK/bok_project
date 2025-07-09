@@ -51,8 +51,6 @@ ul, li {
   cursor: pointer;
   line-height: 1;
   margin: 0.25rem 0;  /* 위아래 0.25rem 간격 */
-
-
 }
 
 .header_content__nav ul li:hover .sub {
@@ -61,8 +59,7 @@ ul, li {
   transform: translateY(0);
 }
 
-.active > a {
+.header_content__nav ul > li.active > span {
   color: #646cff;
   font-weight: bold;
 }
-
