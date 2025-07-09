@@ -13,23 +13,30 @@ const NavBar = ({ user, company }) => {
     <nav className={styles.header_content__nav}>
       <ul>
         <li className={isActive('/Home') ? styles.active : ''}>
-          <span>홈</span>
+          <span>Home</span>
           <ul className={styles.sub}>
-            <li onClick={() => navigate('/Home')}>홈</li>
+            <li onClick={() => navigate('/Home')}>Home</li>
           </ul>
         </li>
 
         <li className={isActive('/About') ? styles.active : ''}>
-          <span>소개</span>
+          <span>Introduce</span>
           <ul className={styles.sub}>
-            <li onClick={() => navigate('/About')}>소개</li>
+            <li onClick={() => navigate('/About')}>Introduce</li>
+          </ul>
+        </li>
+
+        <li className={isActive('/Portfolio') ? styles.active : ''}>
+          <span>Portfolio</span>
+          <ul className={styles.sub}>
+            <li onClick={() => navigate('/Portfolio')}>Portfolio</li>
           </ul>
         </li>
 
         <li className={isActive('/Contact') ? styles.active : ''}>
-          <span>컨택</span>
+          <span>Contact</span>
           <ul className={styles.sub}>
-            <li onClick={() => navigate('/Contact')}>컨택</li>
+            <li onClick={() => navigate('/Contact')}>Contact</li>
           </ul>
         </li>
       </ul>

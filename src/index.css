@@ -11,15 +11,28 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
 }
 
-body{
-  background-color: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+  color: white; /* 글자가 안 보일 수 있으니 기본 텍스트 색도 흰색으로 */
+  height: 100%;
+}
+
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #fff;
   text-decoration: inherit;
 }
 a:hover {
@@ -51,7 +64,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+/*
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -64,3 +77,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+  */
