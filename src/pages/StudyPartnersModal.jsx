@@ -12,8 +12,8 @@ const StudyPartnersModal = ({ visible, onClose }) => {
     },
     {
       name: '우혜림님',
-      vercel: 'https://vercel.com/woo-hyerim',
-      github: 'https://todo-list-app-ecru-pi.vercel.app/',
+      vercel: 'https://todo-list-app-ecru-pi.vercel.app/',
+      github: 'https://github.com/rimi-w/TodoList-App.git',
     },
   ];
 

@@ -15,7 +15,7 @@ const NavBar = ({ user, company }) => {
         <li className={isActive('/Home') ? styles.active : ''}>
           <span>Home</span>
           <ul className={styles.sub}>
-            <li onClick={() => navigate('/Home')}>Home</li>
+            <li onClick={() => navigate('/')}>Home</li>
           </ul>
         </li>
 
@@ -23,6 +23,13 @@ const NavBar = ({ user, company }) => {
           <span>Introduce</span>
           <ul className={styles.sub}>
             <li onClick={() => navigate('/About')}>Introduce</li>
+          </ul>
+        </li>
+
+        <li className={isActive('/VercelGuide') ? styles.active : ''}>
+          <span>Guide</span>
+          <ul className={styles.sub}>
+            <li onClick={() => navigate('/VercelGuide')}>Vercel 새로고침 404 오류</li>
           </ul>
         </li>
 

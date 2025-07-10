@@ -1,0 +1,103 @@
+.home-container {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  height: 100vh;  
+  box-sizing: border-box;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.post-card {
+  position: relative;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+
+.post-desc {
+  margin: 12px 0;
+  color: #ccc;
+}
+
+.post-tags {
+  margin-top: auto;
+  display: flex;          
+  flex-wrap: wrap;        
+  gap: 6px 8px;           
+}
+
+.post-tag {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 10px;
+  background-color: #222;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #88f;
+}
+
+.post-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.post-card h2, .post-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.post-card-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none; /* 클릭 무효화 */
+  filter: grayscale(0.5);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: crimson;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  z-index: 1;
+}
