@@ -14,7 +14,7 @@ const Layout = () => {
       return (
         <div className="layout">
           <header className="header">
-            <div className="header-title">React Page 만들기</div>
+            <div className="header-title">BOK's React Project</div>
               <div
           className="header-info"
           style={{ cursor: 'pointer', textDecoration: 'none' }}
