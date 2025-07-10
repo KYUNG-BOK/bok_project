@@ -7,14 +7,14 @@ const portfolioItems = [
     id: 1,
     title: 'TodoList',
     description: '리액트 상태관리, 커스텀 훅 응용 제작',
-    github: 'https://github.com/yourname/todolist',
+    github: 'https://github.com/KYUNG-BOK/todolist',
     demo: 'https://todolist-nine-drab-78.vercel.app/',
   },
   {
     id: 2,
     title: 'weather app',
     description: '외부 api연동하여 Weather App제작',
-    github: 'https://github.com/yourname/shop',
+    github: 'https://github.com/KYUNG-BOK/weather',
     demo: 'https://weather-vert-two-35.vercel.app/',
   },
 ];
