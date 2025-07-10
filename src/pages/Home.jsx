@@ -2,6 +2,14 @@ import './Home.css';
 
   const posts = [
   {
+    title: '🌤️ React Weather App',
+    date: '2025.07.10',
+    tags: ['API활용','리액트','개발기록','오즈코딩스쿨','초격차_프론트엔드_12기'],
+    description: '카카오MAP API, WHATHER API를 활용한 날씨 앱을 만들어보았습니다..',
+    link: 'https://velog.io/@yoonddubi/React-Weather-App',
+    image: 'https://velog.velcdn.com/images/yoonddubi/post/7935cb8b-549f-4308-8302-47203841cd69/image.png',
+  },
+  {
     title: 'TodoList만들기 with 리액트',
     date: '2025.07.08',
     tags: ['axios', 'todoList', '개발기록', '오즈코딩스쿨','초격차_프론트엔드_12기'],
@@ -41,14 +49,6 @@ import './Home.css';
     description: 'AG Grid Enterprise Trial 버전을 공식적으로 체험하게 되는 내용입니다.',
     link: 'https://velog.io/@yoonddubi/250705',
     image: 'https://velog.velcdn.com/images/yoonddubi/post/a1ac9086-6c54-443c-917d-8740ab93f6ec/image.gif',
-  },
-  {
-    title: '',
-    date: '',
-    tags: [],
-    description: '',
-    link: '#',
-    image: '',
   },
   {
     title: '',
