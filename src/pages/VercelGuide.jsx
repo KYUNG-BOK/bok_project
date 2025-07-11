@@ -4,8 +4,11 @@ function VercelGuide() {
   return (
     <div className="vercel-guide-page">
       <div className="vercel-guide-container">
+        <div className="title-wrapper">
+
         <h1 className="title">🔧 Vercel + React + Vite<br />새로고침 시 404 오류 해결법</h1>
-        
+         </div>
+         <div className="scrollable-content">
         <section>
           <h2>💡 문제</h2>
           <p>
@@ -62,6 +65,7 @@ export default defineConfig({
             서브페이지에서 <strong>404 오류 없이 부드럽게</strong> 작동합니다.
           </p>
         </section>
+        </div>
       </div>
     </div>
   );

@@ -30,6 +30,7 @@ const NavBar = ({ user, company }) => {
           <span>Guide</span>
           <ul className={styles.sub}>
             <li onClick={() => navigate('/VercelGuide')}>Vercel 새로고침 404 오류</li>
+            <li onClick={() => navigate('/VercelUpload')}>Vercel Upload Error</li>
           </ul>
         </li>
 

@@ -2,7 +2,7 @@
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   color: #eee;
   padding: 40px;
-  min-height: 100vh;
+  min-height: 809px;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
@@ -12,18 +12,42 @@
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    padding: 40px;
-    max-width: 800px;
+    width: 800px;
+    height: 720px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .title-wrapper {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
   }
 
   .title {
     font-size: 2.2rem;
-    margin-bottom: 24px;
     color: #8ab4f8;
     text-align: center;
+    margin: 0;
   }
+
+.scrollable-content {
+  padding: 40px;
+  overflow-y: auto;
+  flex-grow: 1;
+
+  /* 스크롤바 숨기기 */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+  .scrollable-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 
   section {
     margin-bottom: 28px;
@@ -40,8 +64,10 @@
     }
   }
 
-  ol {
-    padding-left: 20px;
+  ol,ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 
     li {
       margin-bottom: 20px;
