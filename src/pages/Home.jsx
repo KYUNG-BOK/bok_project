@@ -1,6 +1,14 @@
 import './Home.css';
 
   const posts = [
+    {
+    title: '"Tailwind CSS" 그 험난한 설치의 여정 ..',
+    date: '2025.07.11',
+    tags: ['tailwindCSS','리액트','오즈코딩스쿨','개발기록','초격차_프론트엔드_12기'],
+    description: 'tailwind css 설치, 그 눈물의 ... 기록',
+    link: 'https://velog.io/@yoonddubi/250711',
+    image: 'https://velog.velcdn.com/images/yoonddubi/post/33ce2997-4a68-4162-9dfd-ffc4baeffc46/image.png',
+  },
   {
     title: '🌤️ React Weather App',
     date: '2025.07.10',
@@ -58,59 +66,63 @@ import './Home.css';
     link: '#',
     image: '',
   },
-  {
-    title: '',
-    date: '',
-    tags: [],
-    description: '',
-    link: '#',
-    image: '',
-  },
 ];
 function Home() {
   return (
 <div className="home-container">
       <h1 className="home-title"></h1>
       <div className="post-grid">
-        {posts.map((post, index) => (
-        <a
-          href={post.link}
-          key={index}
-          className={`post-card ${post.link === '#' ? 'post-card-disabled' : ''}`}
-          target={post.link === '#' ? '_self' : '_blank'}
-          rel="링크랍니다"
-          >
-          
-           {/* 준비중 뱃지 표시 */}
-        {post.link === '#' && (
-          <div className="badge">준비중</div>
-        )}
+{posts.map((post, index) => (
+  <div
+    key={index}
+    className={`post-card ${post.link === '#' ? 'post-card-disabled' : ''}`}
+  >
+    {/* 링크 오버레이 (준비중이 아니면 전체 카드 클릭 가능) */}
+    {post.link !== '#' && (
+      <a
+        href={post.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="post-card-overlay"
+        aria-label={post.title}
+      />
+    )}
 
-          
-        <img src={post.image} alt={post.title} className="post-image" />
-        <h2>{post.title}</h2>
-        <p className="post-date">{post.date}</p>
-        <p className="post-desc">{post.description}</p>
-        {post.tags.length > 0 && (
-          <div className="post-tags">
-          {post.tags.map((tag, i) => (
-           <a
-              key={i}
-              href={`https://velog.io/search?q=${encodeURIComponent(tag)}`}
-              target="_blank"
-              rel="tag"
-              className="post-tag"
-            >
-      #{tag}
-    </a>
-          ))}
-        </div>
-      )}
-  </a>
+    {/* 준비중 뱃지 표시 */}
+    {post.link === '#' && (
+      <div className="badge">준비중입니다!</div>
+    )}
+
+    {/* 빈 이미지 방지 */}
+    {post.image && (
+      <img src={post.image} alt={post.title || '썸네일'} className="post-image" />
+    )}
+
+    <h2>{post.title}</h2>
+    <p className="post-date">{post.date}</p>
+    <p className="post-desc">{post.description}</p>
+
+    {post.tags.length > 0 && (
+      <div className="post-tags">
+        {post.tags.map((tag, i) => (
+          <a
+            key={i}
+            href={`https://velog.io/search?q=${encodeURIComponent(tag)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="post-tag"
+          >
+            #{tag}
+          </a>
         ))}
       </div>
+    )}
+  </div>
+))}
+</div>
     </div>
   );
 }
+
 
 export default Home;

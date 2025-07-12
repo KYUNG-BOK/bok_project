@@ -124,3 +124,27 @@
     background-position: 0% 50%;
   }
 }
+
+.vercelLink {
+  background: linear-gradient(45deg, #ff0080, #7928ca); /* 예시 그라디언트 */
+  padding: 6px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 아이콘 색은 기본 검은색 유지 */
+}
+
+.githubLink {
+  padding: 6px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;  /* 흰색 아이콘 */
+  background: transparent;
+}
+
+.githubLink svg {
+  fill: white; /* 확실히 흰색 */
+}

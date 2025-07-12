@@ -31,6 +31,7 @@ const NavBar = ({ user, company }) => {
           <ul className={styles.sub}>
             <li onClick={() => navigate('/VercelGuide')}>Vercel 새로고침 404 오류</li>
             <li onClick={() => navigate('/VercelUpload')}>Vercel Upload Error</li>
+            <li onClick={() => navigate('/EnvGuide')}>Env설정하기</li>
           </ul>
         </li>
 

@@ -2,12 +2,29 @@
   padding: 20px;
   background-color: #000;
   color: #fff;
-  font-family: sans-serif;
-  height: 100vh;  
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
   box-sizing: border-box;
-  overflow: hidden; 
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+
+  scrollbar-width: thin;                    /* Firefox */
+  scrollbar-color: #555 transparent;        /* Firefox */
+}
+
+/* Chrome, Safari, Edge 스크롤바 스타일 */
+.home-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.home-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.home-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #444, #777);
+  border-radius: 8px;
 }
 
 .home-title {
@@ -66,6 +83,8 @@
   border-radius: 8px;
   font-size: 0.85rem;
   color: #88f;
+  z-index: 10;     
+  position: relative;
 }
 
 .post-image {
@@ -101,3 +120,14 @@
   border-radius: 6px;
   z-index: 1;
 }
+
+.post-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;              /* 해시태그보다 아래로 */
+  pointer-events: auto;    /* 전체 카드 클릭 가능 */
+}
+

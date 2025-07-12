@@ -6,6 +6,7 @@ import Layout from './pages/Layout';
 import Portfolio from './pages/Portfolio';
 import VercelGuide from './pages/VercelGuide';
 import VercelUpload from './pages/VercelUpload';
+import EnvGuide from './pages/EnvGuide'
 
 
 
@@ -23,7 +24,7 @@ function App() {
     <Route path="/portfolio" element={<Portfolio />} />
     <Route path="/vercelguide" element={<VercelGuide />} />
     <Route path="/vercelupload" element={<VercelUpload />} />
-
+    <Route path="/envguide" element={<EnvGuide />} />
 
   </Route>
 </Routes>

@@ -1,0 +1,60 @@
+.about-page {
+  height: 850px;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  color: #fff;
+
+  .about-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px 60px;
+    max-width: 700px;  /* 글자 크기 고려한 적당한 너비 */
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+
+    h1.about-title {
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #8ab4f8;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #8ab4f8;
+    }
+
+    p {
+      font-size: 1rem;  /* 기존처럼 */
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 1.6rem;
+      list-style-type: disc;
+      font-size: 1rem;  /* 기존 유지 */
+      line-height: 1.6;
+      color: #e3eaff;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+    }
+  }
+}
